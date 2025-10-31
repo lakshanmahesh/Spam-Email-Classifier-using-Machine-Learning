@@ -44,7 +44,7 @@ Scikit-learn
 
 Pandas, NumPy
 
-Flask (or Streamlit)
+Flask 
 
 Pickle
 
