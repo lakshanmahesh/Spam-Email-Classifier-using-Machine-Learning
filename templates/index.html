@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Mail Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="container">
+        <header class="header">
+            <h1>📧 Spam Mail Prediction</h1>
+            <p class="subtitle">Enter your email text below and click Predict.</p>
+        </header>
+
+        <form action="/predict" class="card" method="POST">
+            <label for="email_text">Email Message: </label>
+            <textarea name="email_text" id="email_text" rows="10" placeholder="Enter your email text here..." required></textarea>
+            <button type="submit" class="btn">Predict</button>
+        </form>
+
+        <footer class="footer">
+            <small>Powered by my trained model</small>
+        </footer>
+
+    </main>
+    
+</body>
+</html>

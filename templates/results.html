@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="container">
+        <div class="card result">
+            <h1>📩 Prediction Result</h1>
+            <p class="prediction {{ css_class }}">{{ prediction }}</p>
+
+            <h2>Input Email</h2>
+            <div class="email-box">
+                <pre>{{email_text}}</pre>
+            </div>
+
+            <a href="/" class="btn">🔁 Predict Another</a>
+        </div>
+
+        <footer class="footer">
+            <small>This machine learning model identifies whether an email is Spam or Ham (Not Spam) based on its message content.</small>
+        </footer>
+    </main>
+    
+</body>
+</html>
