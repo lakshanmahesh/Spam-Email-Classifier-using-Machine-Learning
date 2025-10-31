@@ -49,7 +49,7 @@ Flask (or Streamlit)
 Pickle
 
 ## ⚙️ Installation
-    git clone https://github.com/<your-username>/spam-email-classifier.git
+    git clone https:https://github.com/lakshanmahesh/Spam-Email-Classifier-using-Machine-Learning.git
     cd spam-email-classifier
     pip install -r requirements.tx
 
